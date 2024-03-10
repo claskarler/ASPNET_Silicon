@@ -5,9 +5,9 @@
         </a>
         <div id="menu">
             <nav>
-                <a class="menu-link" href="#">Overview</a>
-                <a class="menu-link" href="#">Features</a>
-                <a class="menu-link" href="#">Contact</a>
+                <a class="menu-link" asp-controller="Home" asp-action="Index" asp-fragment="overview">Overview</a>
+                <a class="menu-link" asp-controller="Home" asp-action="Index" asp-fragment="features">Features</a>
+                <a class="menu-link" asp-controller="Contact" asp-action="Index">Contact</a>
             </nav>
         </div>
 
@@ -21,8 +21,8 @@
         </div>
 
         <div class="account-buttons">
-            <button class="btn-gray">Sign in</button>
-            <button class="btn-theme">Sign up</button>
+            <a class="btn-gray" asp-controller="SignIn" asp-action="Index"><i class="fa-regular fa-right-to-bracket"></i><span>Sign in</span></a>
+            <a class="btn-theme" asp-controller="SignUp" asp-action="Index"><i class="fa-regular fa-user"></i><span>Sign up</span></a>
         </div>
 
     </div>
