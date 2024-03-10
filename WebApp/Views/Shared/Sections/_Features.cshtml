@@ -1,0 +1,20 @@
+﻿@model FeaturesViewModel
+
+<div id="@Model.Id" class="features">
+    <div class="container">
+        <h1>@Model.Title</h1>
+        <p>@Model.Text</p>
+        <div class="tool-features">
+            @if (Model.Features != null)
+            {
+                foreach (var feature in Model.Features)
+                {
+                    <div class="box">
+                        <img src="@feature.ImageUrl" alt="@feature.AltText">
+                        <h5>@feature.Title</h5>
+                        <p>@feature.Text</p>
+                    </div>
+                }
+            }
+        </div>
+    </div>
