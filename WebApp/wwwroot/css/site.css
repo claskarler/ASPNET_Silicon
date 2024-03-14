@@ -271,6 +271,29 @@ a:hover {
   color: #FFFFFF;
 }
 
+.btn-transparent {
+  border-radius: 6px;
+  text-align: center;
+  font-size: 14px;
+  padding: 8px 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  justify-content: start;
+  align-items: start;
+  background: transparent;
+  color: #33354D;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 13px;
+}
+.btn-transparent:hover {
+  text-decoration: none;
+  background: #565973;
+  color: #FFFFFF;
+}
+
 .btn-switch {
   display: flex;
   align-items: center;
